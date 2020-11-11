@@ -10,6 +10,15 @@
 6. We then clicked on the clipboard with the ssh url and typed in the terminal `git remote add origin <paste url here>`. Without the <>.
 7. We then typed `git push -u origin master` in order to set the upstream (default) location to origin (repository) master (branch) in github.
 
+### How to setup Pry
+
+1. If you don't have a `Gemfile` in your project. Run `bundle init` to add a Gemfile.
+2. Inside the Gemfile, add `gem "pry"` and save.
+3. Run `bundle install`, make sure it says using Pry.
+4. In the file you want to use pry in, at the top add `require "pry"`.
+5. Where you want code to stop and go into pry, add `binding.pry`.
+6. Save the file and run `ruby filename.rb` to run the file and go into pry.
+
 ### What are arrays?
 
 1. List of elements, datatypes such as ( string, number, other arrays, objects, hashes )
